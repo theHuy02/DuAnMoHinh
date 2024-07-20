@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 30%;
+            height: auto;
+            margin-right: 20px;
+        }
+        .product-info {
+            flex: 1;
+        }
+        .product-info h2 {
+            margin-bottom: 10px;
+        }
+        .product-info p {
+            margin: 10px 0;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        #quantityInput {
+            width: 50px;
+            text-align: center;
+        }
+
+        .related-products {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .product {
+            display: inline-block;
+            margin-right: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chi tiết sản phẩm</h1>
+    </header>
+    <div class="container">
+        <img src="img/avatars/haha.jpg" alt="Product Image">
+        <div class="product-info">
+            <h2>Tên sản phẩm</h2>
+            
+            <p>Giá: $100</p>
+            <label for="quantityInput">Số lượng:</label>
+            <input type="number" id="quantityInput" min="1" value="1">
+            <button onclick="addToCart()">Thêm vào giỏ hàng</button>
+            <button onclick="buyNow()">Mua ngay</button>
+        </div>
+        
+    </div>
+    <div class="container">
+        <p>Mô tả sản phẩm...</p>
+    </div>
+
+    <!-- Phần sản phẩm khác bạn có thể quan tâm -->
+    <div class="related-products">
+        <h2>Sản phẩm khác bạn có thể quan tâm</h2>
+        <div class="product">
+            <img src="img/avatars/thumb-1.jpg" alt="Related Product 1">
+            <h3>Tên sản phẩm 1</h3>
+            <p>Giá: $80</p>
+            <button onclick="viewProduct('related-product1')">Xem chi tiết</button>
+        </div>
+        <div class="product">
+            <img src="img/avatars/thumb-10.jpg" alt="Related Product 2">
+            <h3>Tên sản phẩm 2</h3>
+            <p>Giá: $120</p>
+            <button onclick="viewProduct('related-product2')">Xem chi tiết</button>
+        </div>
+        <!-- Thêm sản phẩm khác nếu cần -->
+    </div>
+
+    <script>
+        function addToCart() {
+            var quantity = document.getElementById('quantityInput').value;
+            alert("Đã thêm " + quantity + " sản phẩm vào giỏ hàng!");
+            // Thêm logic xử lý thêm vào giỏ hàng ở đây (có thể sử dụng AJAX để gửi yêu cầu đến máy chủ)
+        }
+
+        function buyNow() {
+            var quantity = document.getElementById('quantityInput').value;
+            alert("Đã thêm " + quantity + " sản phẩm vào giỏ hàng và chuyển đến trang thanh toán!");
+            // Thêm logic xử lý mua ngay ở đây
+        }
+
+        function viewProduct(productId) {
+            // Thêm logic để chuyển đến trang chi tiết sản phẩm của sản phẩm liên quan
+            alert("Chuyển đến trang chi tiết sản phẩm " + productId);
+        }
+    </script>
+</body>
+</html>
