@@ -38,4 +38,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 } else {
     echo 'Yêu cầu không hợp lệ';
 }
+// <div>
+// </div>
 ?>
