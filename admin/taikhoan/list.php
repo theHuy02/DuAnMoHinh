@@ -14,7 +14,6 @@
 </head>
 
 <body>
-	<h1>danh sach tai khoan </h1>
 	<!-- Content start -->
 	<main class="h-full">
 							<div
