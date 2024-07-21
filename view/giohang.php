@@ -40,7 +40,7 @@
   </style>
 </head>
 <body>
-<h1>Gio hang </h1>
+<h1>Shopping Cart</h1>
 
 <div class="shopping-cart">
 
