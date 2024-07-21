@@ -92,7 +92,7 @@ if(is_array($suadh)){
                 <td><input type="text" name="role" value="<?php echo $trangthai ?>"></td>
             </tr>
             <tr>
-                <th>Trạng Thái Thanh Toán</th>
+                <th>Trạng Thái Thanh Toán Đơn Hàng</th>
                 <td><input type="text" name="role" value="<?php echo $trangthaiTT ?>"></td>
             </tr>
         </table>
