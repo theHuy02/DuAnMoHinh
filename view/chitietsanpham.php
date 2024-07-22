@@ -142,6 +142,7 @@
                     <input type="text" name="noidung" placeholder="nhập bình luận của bạn">
                     <button class="gui" type="submit" name="guibinhluan" style="background:#AAAAAA" >Gửi</button>
                 </form>
+                <div></div>
             </div>
 
         </div>
