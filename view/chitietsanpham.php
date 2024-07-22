@@ -140,7 +140,7 @@
                 <form action="index.php?act=chitiet&idsp=<?=$id?>" method="POST">
                     <input type="hidden" name="idpro" value="<?=$id?>">
                     <input type="text" name="noidung" placeholder="nhập bình luận của bạn">
-                    <input class="gui" type="submit" name="guibinhluan" value="Gửi bình luận">
+                    <button class="gui" type="submit" name="guibinhluan" style="background:#AAAAAA" >Gửi</button>
                 </form>
             </div>
 
