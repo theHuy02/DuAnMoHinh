@@ -216,7 +216,6 @@ table.ec-table tbody tr:nth-of-type(odd) {
 </div>
 </div>
 </div>
-<div></div>
 <script>
 function changeStatus(status, id) {
     let url = "http://localhost/Duan1/index.php?act=chitietdon&";
