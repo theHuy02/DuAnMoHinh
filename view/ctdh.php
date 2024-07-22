@@ -40,7 +40,7 @@ $onedh = loadone_donhang();
                                                                     <th scope="col">Tên Sản Phẩm</th>
                                                                     <th>Ảnh sản phẩm</th>
                                                                     <th scope="col">Số Lượng</th>
-                                                                    <th scope="col">Giá sản phẩm</th>
+                                                                    <th scope="col">Giá</th>
                                                                     <th scope="col">Tổng</th>
                                                                 </tr>
                                                             </thead>

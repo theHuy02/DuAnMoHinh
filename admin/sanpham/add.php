@@ -34,6 +34,7 @@
         </style>
 	</head>
 	<body>
+    
 			<!-- Content start -->
 	<main class="h-full">
 								<div class="page-container relative h-full flex flex-auto flex-col px-4 sm:px-6 md:px-8 py-4 sm:py-6">
