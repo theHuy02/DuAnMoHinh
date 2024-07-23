@@ -71,6 +71,10 @@ li {
 a{
     font-size: 18;
 }
+
+/* form{
+    background-color: red;
+} */
 </style>
 
 <section class="ec-page-content section-space-p">
@@ -94,11 +98,11 @@ a{
                         
                             <form action="index.php?act=#!" method="post">
                                 <span class="ec-login-wrap">
-                               <label>User Name</label>
+                               <label>Tên tài khoản</label>
                                     <input type="text" value="<?=$user?>" disabled  />
                                 </span>
                                 <span class="ec-login-wrap">
-                               <label>Full Name</label>
+                               <label>Họ và tên</label>
                                     <input type="text" value="<?=$fullname?>"   disabled />
                                 </span>
                                 <span class="ec-login-wrap">
@@ -106,11 +110,11 @@ a{
                                     <input type="text" value="<?=$email?>"   disabled />
                                 </span>
                                 <span class="ec-login-wrap">
-                                    <label>Phone Number</label>
+                                    <label>Số điện thoại</label>
                                     <input type="text"  value="<?=$tel?>"  disabled />
                                 </span>
                                 <span class="ec-login-wrap">
-                                    <label>Address</label>
+                                    <label>Địa chỉ</label>
                                     <input type="text" value="<?=$address?>"  disabled />
                                 </span>
                                 </form>

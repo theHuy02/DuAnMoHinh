@@ -11,6 +11,7 @@ include 'view/header.php';
 include 'model/binhluan.php';
 include 'model/order.php';
 include 'model/bill.php';
+include 'model/quenmatkhau.php';
 
 $spnew = loadall_sanpham_home();
 $dsdm = loadall_danhmuc();
@@ -101,6 +102,27 @@ if((isset($_GET['act'])) && ($_GET['act'] != '')) {
                 }
             }
             include 'view/taikhoan/matkhau.php';
+            break;
+
+        
+        case 'quenmatkhau':
+            if (isset($_POST['quenmatkhau']) && ($_POST['quenmatkhau'] > 0)) {
+                $email = $_POST['email'];
+                $matkhau = generateRandomString(10);
+                
+                if (update_matkhau($email, $matkhau)) {
+                    $to = $email;
+                    $subject = "Mật khẩu mới của bạn";
+                    $message = "Mật khẩu mới của bạn là: $matkhau";
+                    $headers = "From: no-reply@yourdomain.com";
+
+                    mail($to, $subject, $message, $headers);
+                    $thongbao = 'Kiểm tra email của bạn để lấy mật khẩu mới';
+                } else {
+                    $thongbao = 'Email không tồn tại trong hệ thống.';
+                }
+            }
+            include 'view/taikhoan/quenmatkhau.php';
             break;
 
         case 'chitiet':

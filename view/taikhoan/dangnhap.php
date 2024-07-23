@@ -39,7 +39,7 @@
                                     <input type="password" name="password" placeholder="Nhập mật khẩu" required />
                                 </span>
                                 <span class="ec-login-wrap ec-login-fp">
-                                    <label><a href="#">Quên mật khẩu?</a></label>
+                                    <label><a href="index.php?act=quenmatkhau" class="quenmatkhau">Quên mật khẩu?</a></label>
                                 </span>
                                 
                                 <span class="ec-login-wrap ec-login-btn">
