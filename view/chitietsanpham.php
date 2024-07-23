@@ -22,6 +22,12 @@
     }
     .gui {
         text-align: center;
+        margin-top: 9px;
+        padding: 5px 10px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
     }
     input {
         height: 40px;
@@ -103,11 +109,11 @@
                                         </div>
                                         <div class="ec-single-social">
                                             <ul class="mb-0">
-                                                <li class="list-inline-item facebook"><a href="https://www.facebook.com/dat2k4.pr"><i
+                                                <li class="list-inline-item facebook"><a href="#"><i
                                                             class="ecicon eci-facebook"></i></a></li>
-                                                <li class="list-inline-item twitter"><a href="https://twitter.com/dmin111zzz"><i
+                                                <li class="list-inline-item twitter"><a href="#"><i
                                                             class="ecicon eci-twitter"></i></a></li>
-                                                <li class="list-inline-item instagram"><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fkynguyen2204%3Figshid%3DMTNiYzNiMzkwZA%253D%253D%26fbclid%3DIwAR2K41JicdOQYUM9t5_607zJOs6DuWK7X5Bx2wwkW8iZN7J__j0heQAxT-g&h=AT3GSDTAfcS5V8P9sydVKIuXm1_lE6hRdw12NsYK4V-pYfs5FjeQFIBih_JR95RnHucHeTjNwmzkSUUT9nKMGKTrEjZjIv6GZaIUfLrWuC4mMAD2MV2UIrCShMX02fsW_br0Zsq6K3N1qIMHTlee0A"><i
+                                                <li class="list-inline-item instagram"><a href="#"><i
                                                             class="ecicon eci-instagram"></i></a></li>
                                                 <li class="list-inline-item youtube-play"><a href="https://youtu.be/TlE-fZDzuuk?feature=shared"><i
                                                             class="ecicon eci-youtube-play"></i></a></li>
@@ -139,7 +145,7 @@
             <div class="box_search">
                 <form action="index.php?act=chitiet&idsp=<?=$id?>" method="POST">
                     <input type="hidden" name="idpro" value="<?=$id?>">
-                    <input type="text" name="noidung" placeholder="nhập bình luận của bạn">
+                    <input type="text" name="noidung" placeholder="Nhập bình luận của bạn">
                     <button class="gui" type="submit" name="guibinhluan" style="background:#AAAAAA" >Gửi</button>
                 </form>
             </div>
