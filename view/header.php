@@ -199,13 +199,13 @@
                                             <?= $fullname ?>
                                     </a></button>
                                     <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a class="dropdown-item" href="index.php?act=profile">Profile User </a></li>
-                                        <li><a class="dropdown-item" href="index.php?act=thoat">Sign out</a></li>
+                                        <li><a class="dropdown-item" href="index.php?act=profile">Thông tin </a></li>
+                                        <!-- <li><a class="dropdown-item" href="index.php?act=thoat">Sign out</a></li> -->
                                         <?php
                                         if($role==1){?>
-                                        <li><a class="dropdown-item" href="admin/index.php"> Admin</a></li>
+                                        <li><a class="dropdown-item" href="admin/index.php">Admin</a></li>
                                         <?php }?>
-                                        <li><a class="dropdown-item" href="index.php?act=thoat">Checkout</a></li>
+                                        <li><a class="dropdown-item" href="index.php?act=thoat">Đăng xuất</a></li>
                                     </ul>
  
                                 </div>
@@ -221,9 +221,9 @@
                                         <button class="dropdown-toggle" data-bs-toggle="dropdown"><i
                                                 class="fi-rr-user"></i></button>
                                         <ul class="dropdown-menu dropdown-menu-right">
-                                            <li><a class="dropdown-item" href="index.php?act=dangky">Register</a></li>
-                                            <li><a class="dropdown-item" href="index.php?act=thoat">Checkout</a></li>
-                                            <li><a class="dropdown-item" href="index.php?act=dangnhap">Login</a></li>
+                                            <li><a class="dropdown-item" href="index.php?act=dangky">Đăng kí</a></li>
+                                            <!-- <li><a class="dropdown-item" href="index.php?act=thoat">Checkout</a></li> -->
+                                            <li><a class="dropdown-item" href="index.php?act=dangnhap">Đăng nhập</a></li>
                                         </ul>
                                     </div>
                                     <!-- Header User End -->
