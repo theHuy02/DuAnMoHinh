@@ -89,7 +89,7 @@
                                                     <img class="main-image" src="<?= $hinh ?>" alt="Product" />
                                                     <img class="hover-image" src="<?= $hinh1 ?>" alt="Product" />
                                                 </a>
-                                                <span class="percentage">New</span>
+                                                <!-- <span class="percentage">New</span> -->
 
                                                 <div class="ec-pro-actions">
                                                     <button class="add-to-cart" data-id="<?= $id ?>" onclick="addToCart(<?= $id ?>,'<?= $name ?>',<?= $price ?>)" ><i
@@ -101,13 +101,13 @@
                                         </div>
                                         <div class="ec-pro-content">
                                             <h5 class="ec-pro-title"><a href="<?= $linksp ?>"><?= $name ?></a></h5>
-                                            <div class="ec-pro-rating">
+                                            <!-- <div class="ec-pro-rating">
                                                 <i class="ecicon eci-star fill"></i>
                                                 <i class="ecicon eci-star fill"></i>
                                                 <i class="ecicon eci-star fill"></i>
                                                 <i class="ecicon eci-star fill"></i>
                                                 <i class="ecicon eci-star"></i>
-                                            </div>
+                                            </div> -->
                                             <span class="ec-price">
                                                 <span class="old-price"><?= number_format((int)$priceo, 0, ",", ".")  ?> VNĐ</span>
                                                 <span class="new-price" style="color:red;"> <?= number_format((int)$price, 0, ",", ".") ?> VNĐ</span>
