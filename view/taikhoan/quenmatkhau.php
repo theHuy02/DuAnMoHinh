@@ -20,8 +20,5 @@
         <input type="email" id="email" name="email" value="<?php $email ?>" required>
         <button type="submit" name="guiquenmatkhau">Gửi yêu cầu</button>
     </form>
-    <?php if (isset($message)): ?>
-    <p><?php echo $message; ?></p>
-    <?php endif; ?>
     </div>
 
