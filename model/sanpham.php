@@ -1,4 +1,5 @@
 <?php
+
 function insert_sanpham($iddm,$tensp, $giasp,$soluong, $mota,$hinh,$hinh1)
 {
     $sql = "INSERT INTO sanpham (iddm,name,price,mota,img,img1,soluong) VALUES ('$iddm','$tensp','$giasp','$mota','$hinh','$hinh1','$soluong')";
@@ -15,6 +16,7 @@ function loadall_sanpham_home()
     $sql="SELECT * FROM sanpham where 1 order by id desc limit 0,9";
     $listsanpham = pdo_query($sql);
     return $listsanpham;
+    // var_dump($listsanpham);
 }
 function loadall_sanphamcart()
 {
