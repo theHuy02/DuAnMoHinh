@@ -1,4 +1,5 @@
 <?php
+// Load bieudo
 function load_thongke_sanpham_danhmuc()
 {
     $sql = "SELECT dm.id, dm.name, COUNT(*) 'soluong', MIN(price) 'gia_min', MAX(price) 'gia_max', AVG(price) 'gia_avg' FROM danhmuc dm 
