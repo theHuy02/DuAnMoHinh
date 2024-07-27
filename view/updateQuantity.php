@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Kiểm giỏ hàng có tồn tại hay không
     if (!empty($_SESSION['cart'])) {
-        // Kiểm tra sản phẩm đã có trong giỏ hàng chưa
+        // Kiểm tra sản phẩm đã có trong giỏ hàng chưaaaaa
         $index = array_search($productId, array_column($_SESSION['cart'], 'id'));
 
         // Nếu sản phẩm tồn tại thì cập nhật lại số lượng
