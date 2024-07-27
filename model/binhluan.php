@@ -1,4 +1,5 @@
 <?php 
+// Ket noi den csdl de load tung san pham
     function loadone_binhluan($idsp){
         $sql = "
             SELECT binhluan.id, binhluan.noidung, taikhoan.user, binhluan.ngaybinhluan FROM `binhluan` 
