@@ -2,6 +2,8 @@
 // if (empty($dataDb)) {
 //     echo '<h1>Chưa có sản phẩm nào trong giỏ hàng</h1>';
 // } else {
+    // }
+
 ?>
     <table border="1" width="100%" style="margin: 0 auto;">
         <thead>
@@ -53,7 +55,7 @@
                 $vat +=(((int)$product['price'] * (int)$quantityInCart))*0.05;
                 $sum_total +=(    ((int)$product['price'] * (int)$quantityInCart)) + (int)$vat ;
 
-                // Lưu tổng giá trị vào sesion
+                // Lưu tổng giá trị vào sesion abc
                 $_SESSION['resultTotal'] = $sum_total;
             endforeach;
             ?>
