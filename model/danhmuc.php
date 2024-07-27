@@ -1,9 +1,11 @@
 <?php
+// them danh muc
 function insert_danhmuc($tenloai)
 {
     $sql = "INSERT INTO `danhmuc`(`name`) VALUES ('$tenloai')";
     pdo_execute($sql);
 }
+// Xoa danh muc
 function delete_danhmuc($id)
 {
     $sql = "DELETE FROM `danhmuc` WHERE id=" .$_GET['id'];
