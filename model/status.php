@@ -8,6 +8,7 @@
     function update($newStatus,$id_order) {
         $sql = "UPDATE tbl_order SET status = '$newtrangthai' WHERE id = $id_order";
         pdo_execute($sql);
+        // var_dump($sql);
     }
 
     echo $status;
