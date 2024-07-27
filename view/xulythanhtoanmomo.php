@@ -59,7 +59,7 @@ $extraData = "";
     $result = execPostRequest($endpoint, json_encode($data));
     $jsonResult = json_decode($result, true);  // decode json
 
-    //Just a example, please check more in there
+    //Chỉ là một ví dụ, vui lòng kiểm tra thêm ở đó
 
     header('Location: ' . $jsonResult['payUrl']);
 ?>
