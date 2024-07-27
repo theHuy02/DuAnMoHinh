@@ -11,7 +11,7 @@ include "../global.php";
 if (!empty($_SESSION['cart'])) {
     $cart = $_SESSION['cart'];
 
-    // Tạo mảng chứa ID các sản phẩm trong giỏ hàng
+    // Tạo mảng chứa ID các sản phẩm trong giỏ hàngg
     $productId = array_column($cart, 'id');
 
     // Chuyển đôi mảng id thành một cuỗi để thực hiện truy vấn
