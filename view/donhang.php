@@ -47,6 +47,7 @@
             <th>Địa Chỉ</th>
             <!-- diachi -->
             <th>Tổng tiền</th>
+        <!-- tongtien -->
             <th>Phương Thức Thanh Toán</th>
             <th>Trạng thái đơn hàng</th>
             <th>Trạng Thái Thanh Toán</th>
