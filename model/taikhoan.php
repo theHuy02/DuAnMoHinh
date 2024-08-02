@@ -1,5 +1,6 @@
 
 <?php
+// Them tai khoan
 function insert_taikhoan($email, $user, $password,$fullname,$tel,$address)
 {
     $sql = "INSERT INTO taikhoan (email,user,password,fullname,tel,address) VALUES ('$email','$user','$password','$fullname','$tel','$address')";

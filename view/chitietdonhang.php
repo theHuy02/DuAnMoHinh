@@ -51,7 +51,12 @@ table.ec-table td {
 }
 
 table.ec-table th {
+
     background-color: #f2f2f2;
+
+  background-color: #f2f2f2;
+  /* font-weight: bold; */
+
 }
 
 table.ec-table tbody tr:nth-of-type(odd) {

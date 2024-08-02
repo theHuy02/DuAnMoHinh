@@ -31,6 +31,7 @@
     .btn-primary {
         border-radius: 20%;
         width: 70px;
+        /* height: 30px; */
     }
 </style>
 <div class="chung">

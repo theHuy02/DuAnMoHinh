@@ -140,7 +140,9 @@
             </div>
         </div>
     </footer>
+    <!-- Modal -->
     <!-- Footer Area End -->
+     
 
     <!-- Modal -->
     <!-- <div class="modal fade" id="ec_quickview_modal" tabindex="-1" role="dialog">

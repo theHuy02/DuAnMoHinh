@@ -1,5 +1,5 @@
 <?php
-
+    // Lay tu tren csdl xuong
     function select_donhang() {
         $sql = "SELECT 
                     u.id as user_id,
@@ -22,7 +22,7 @@
                     o.id";
         return pdo_query($sql);
     }
-
+    // Lay du lieu tren csdl xuong
     function listOrder_detail($order_id){
         $sql="SELECT 
                 od.id,

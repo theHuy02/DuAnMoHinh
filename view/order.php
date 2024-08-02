@@ -17,6 +17,7 @@
         width: 40%;
         padding: 20px;
         box-sizing: border-box;
+        /* margin-bottom: 20px; */
     }
 
     h2 {
@@ -80,6 +81,9 @@
                 <p ><input style="width: 20px;" type="radio" name="pttt" id="" value="2" required> Chuyển khoản ngân hàng</p>
                 <input style="width: 200px; text-align: center;padding: 0;margin-left: 300px;" type="submit" value="Xác nhận đặt hàng" name="order_confirm">
             </form>
+            
+        </div>
+        <div>
             
         </div>
         <div class="sub-order">
