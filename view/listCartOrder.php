@@ -83,6 +83,7 @@ function updateQuantity(id, index, availableStock) {
         newQuantity = 1;
         $('#quantity_' + id).val(newQuantity);
     } else if (newQuantity > availableStock) {
+        
         alert('Số lượng sản phẩm không đủ');
         $('#quantity_' + id).val(availableStock);
     } else {
