@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $productId = $_POST['id'];
     $productName = $_POST['name'];
     $productPrice = $_POST['price'];
-
+    // nhom5
     // Kiểm tra sản phẩm đã có trong giỏ hàng chưa
     $index = false;
     if (!empty($_SESSION['cart'])) {
