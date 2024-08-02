@@ -25,9 +25,6 @@
                     }
                 }
         ?>
-        <div>
-            
-        </div>
         <tr align="center">
             <td><?= $key + 1 ?></td>
             <td>
