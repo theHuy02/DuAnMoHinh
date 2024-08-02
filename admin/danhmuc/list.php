@@ -117,7 +117,7 @@
 							</div>
 						</main>
 
-						
+	<!-- confirm danh muc -->			
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const deleteLinks = document.querySelectorAll('a[href*="act=xoadm&id="]');

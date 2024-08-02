@@ -101,7 +101,7 @@
 						</main>
 						<!-- Content end -->
 </body>
-<!-- confirm san pham -->
+<!-- confirm san phamr -->
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const deleteLinks = document.querySelectorAll('a[href*="act=xoasp&id="]');
