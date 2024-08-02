@@ -5,6 +5,7 @@ session_start();
 if (!isset($_SESSION['cart'])) {
     // Nếu không có thì đi khởi tạo
     $_SESSION['cart'] = [];
+    // 1111
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
