@@ -31,6 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'id' => $productId,
             'name' => $productName,
             'price' => $productPrice,
+            // van
             'quantity' => 1
         ];
         $_SESSION['cart'][] = $product;
