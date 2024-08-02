@@ -43,6 +43,7 @@
             <!-- hoten -->
             <th>Họ tên</th>
             <th>SĐT</th>
+            <!-- sdt -->
             <th>Địa Chỉ</th>
             <th>Tổng tiền</th>
             <th>Phương Thức Thanh Toán</th>
