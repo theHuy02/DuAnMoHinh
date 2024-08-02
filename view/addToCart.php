@@ -11,6 +11,7 @@ if (!isset($_SESSION['cart'])) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Lấy dữ liệu từ ajax đẩy lên
     $productId = $_POST['id'];
+    //baitap
     $productName = $_POST['name'];
     $productPrice = $_POST['price'];
     // nhom5
