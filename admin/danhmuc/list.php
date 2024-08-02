@@ -40,6 +40,7 @@
                             extract($danhmuc);
                             $suadm = "index.php?act=suadm&id=".$id;
                             $xoadm = "index.php?act=xoadm&id=".$id;
+							// bill
                             echo '
 						<tbody>
 														<tr>
