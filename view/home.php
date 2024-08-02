@@ -48,15 +48,13 @@
                     <div class="section-title">
                         <h2 class="ec-bg-title">Sản Phẩm đáng chú ý</h2>
                         <h2 class="ec-title">Sản Phẩm đáng chú ý</h2>
-                        <p class="sub-title">Cùng Trải Nghiệm Sản Phẩm Của Chúng Tôi</p>
+                        <p class="sub-title" style="font-family:'Arial'">Cùng Trải Nghiệm Sản Phẩm Của Chúng Tôi</p>
                     </div>
                 </div>
 
                 <!-- Tab Start -->
                 <!-- Tab End -->
-            <div>
-                
-            </div>
+
 
             </div>
             <div class="row">
@@ -85,28 +83,28 @@
                                     <div class="ec-product-inner">
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
-                                                <a href=" <?= $linksp ?> " class="image">
+                                                <a href="<?= $linksp ?>" class="image">
                                                     <img class="main-image" src="<?= $hinh ?>" alt="Product" />
                                                     <img class="hover-image" src="<?= $hinh1 ?>" alt="Product" />
                                                 </a>
-                                                <span class="percentage">New</span>
+                                                <!-- <span class="percentage">New</span> -->
 
                                                 <div class="ec-pro-actions">
                                                     <button class="add-to-cart" data-id="<?= $id ?>" onclick="addToCart(<?= $id ?>,'<?= $name ?>',<?= $price ?>)" ><i
                                                             class="fi-rr-shopping-basket"></i> Add To Cart</button>
-                                                    <a class="ec-btn-group wishlist" title="Wishlist"><i
-                                                            class="fi-rr-heart"></i></a>
+                                                    <!-- <a class="ec-btn-group wishlist" title="Wishlist"><i
+                                                            class="fi-rr-heart"></i></a> -->
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="ec-pro-content">
                                             <h5 class="ec-pro-title"><a href="<?= $linksp ?>"><?= $name ?></a></h5>
                                             <div class="ec-pro-rating">
+                                                <!-- <i class="ecicon eci-star fill"></i>
                                                 <i class="ecicon eci-star fill"></i>
                                                 <i class="ecicon eci-star fill"></i>
                                                 <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star"></i>
+                                                <i class="ecicon eci-star"></i> -->
                                             </div>
                                             <span class="ec-price">
                                                 <span class="old-price"><?= number_format((int)$priceo, 0, ",", ".")  ?> VNĐ</span>
@@ -148,7 +146,7 @@
                     <div class="row" >
                         <div class="banner-block col-lg-6 col-md-12 margin-b-30" data-animation="slideInRight">
                             <div class="bnr-overlay" style="width : 670px ;">
-                                <img src="upload/anh/images (12).jpg " style="width : 670px ;"   alt="" >
+                                <img src="upload/thay3.jpg" style="width : 670px ;"   alt="" >
                                 <!-- <img src="upload/anh/gundam-dep-nhat-14.jpg" alt="" /> -->
                                 <div class="banner-text">
                                     <span class="ec-banner-stitle">New Arrivals</span>
@@ -162,7 +160,7 @@
                         </div>
                         <div class="banner-block col-lg-6 col-md-12" data-animation="slideInLeft">
                             <div class="bnr-overlay" style="width : 670px ;">
-                                <img src="upload/anh/images (11).jpg" alt="" style="width : 670px ;" />
+                                <img src="upload/thay4.jpg" alt="" style="width : 670px ;" />
                                 <div class="banner-text">
                                     <span class="ec-banner-stitle">New Trending</span>
                                     <span class="ec-banner-title">Smart<br> watches</span>
@@ -233,7 +231,7 @@
                         <!-- 1st Category tab end -->
                         <div class="tab-pane fade show active" id="tab-cat-1">
                             <div class="row">
-                                <img src="upload/anh/anh2.webp" alt="" />
+                                <img src="upload/thay7.jpg" alt="" />
                             </div>
                             <span class="panel-overlay">
                                 <a href="shop-left-sidebar-col-3.html" class="btn btn-primary">View All</a>
@@ -242,7 +240,7 @@
                         <!-- 1st Category tab end -->
                         <div class="tab-pane fade" id="tab-cat-2">
                             <div class="row">
-                                <img src="upload/anh/images (13).jpg" alt="" />
+                                <img src="upload/thay5.jpg" alt="" />
                             </div>
                             <span class="panel-overlay">
                                 <a href="shop-left-sidebar-col-3.html" class="btn btn-primary">View All</a>
@@ -252,7 +250,7 @@
                         <!-- 3rd Category tab start -->
                         <div class="tab-pane fade" id="tab-cat-3">
                             <div class="row">
-                                <img src="upload/anh/images (14).jpg" alt="" />
+                                <img src="upload/thay6.jpg" alt="" />
                             </div>
                             <span class="panel-overlay">
                                 <a href="shop-left-sidebar-col-3.html" class="btn btn-primary">View All</a>
@@ -262,7 +260,7 @@
                         <!-- 4th Category tab start -->
                         <div class="tab-pane fade" id="tab-cat-4">
                             <div class="row">
-                                <img src="upload/anh/images (15).jpg" alt="" />
+                                <img src="upload/thay5.jpg" alt="" />
                             </div>
                             <span class="panel-overlay">
                                 <a href="shop-left-sidebar-col-3.html" class="btn btn-primary">View All</a>

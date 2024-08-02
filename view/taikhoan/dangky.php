@@ -1,12 +1,21 @@
-
+<style>
+    .dangki {
+        text-align: center;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        /* margin-bottom: 10px; */
+        
+    }
+</style>
 <section class="ec-page-content section-space-p">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="section-title">
-                        <h2 class="ec-bg-title">Register</h2>
-                        <h2 class="ec-title">Register</h2>
-                        <p class="sub-title mb-3">Best place to buy and sell digital products</p>
+                        <h2 class="ec-bg-title">Đăng kí</h2>
+                        <h2 class="ec-title">Đăng kí</h2>
+                        <p class="sub-title mb-3">Nơi tốt nhất để mua và bán sản phẩm kĩ thuật số</p>
                     </div>
                 </div>
                 <div class="ec-register-wrapper">
@@ -14,33 +23,33 @@
                         <div class="ec-register-form">
                         <form action="index.php?act=dangky" method="post">
                                 <span class="ec-register-wrap ec-register-half">
-                                    <label>Username*</label>
-                                    <input type="text" name="user" placeholder="Enter your username" required />
+                                    <label>Tên tài khoản*</label>
+                                    <input type="text" name="user" placeholder="Nhập tên người dùng của bạn" required />
                                 </span>
                                 <span class="ec-register-wrap ec-register-half">
-                                <label>Password*</label>
-                                    <input type="password" name="password" placeholder="Password" required />
+                                <label>Mật khẩu*</label>
+                                    <input type="password" name="password" placeholder="Nhập mật khẩu" required />
                                     
                                 </span>
                                 <span class="ec-register-wrap ec-register-half">
-                                <label>Full Name*</label>
-                                    <input type="text" name="fullname" placeholder="Enter your full name" required />
+                                <label>Họ và tên*</label>
+                                    <input type="text" name="fullname" placeholder="Nhập tên đầy đủ của bạn" required />
                                     
                                 </span>
                                 <span class="ec-register-wrap ec-register-half">
                                 <label>Email*</label>
-                                    <input type="email" name="email" placeholder="Enter your email address" required />
+                                    <input type="email" name="email" placeholder="Nhập dịa chỉ email của bạn" required />
                                     
                                 </span>
                                 <span class="ec-register-wrap">
-                                <label>Phone Number*</label>
-                                    <input type="text" name="tel" placeholder="Enter your phone number"/>
+                                <label>Số điện thoại*</label>
+                                    <input type="text" name="tel" placeholder="Nhập số điện thoại của bạn"/>
                                      
                                    
                                 </span>
                                 <span class="ec-register-wrap">
-                                <label>Address*</label>
-                                    <input type="text" name="address" placeholder="Address" />
+                                <label>Địa chỉ*</label>
+                                    <input type="text" name="address" placeholder="Nhập địa chỉ" />
                                 </span>
                                 <!-- <span class="ec-register-wrap ec-recaptcha">
                                     <span class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S"
@@ -61,7 +70,7 @@
                                     </div>
                                     <!-- <button class="btn btn-primary" type="submit" name="dangky">Register</button> -->
                                     <!-- <input type="submit" value="Đăng ký" name="dangky"> -->
-                                    <input class="btn btn-primary" style="background-color:#3474d4;color:#FFFFFF" type="submit" value="Register" name="dangky">
+                                    <input class="dangki" style="background-color:#8B4513;color:black" type="submit" value="Đăng kí" name="dangky" width="10px">
                                 </span>
                             </form>
                             

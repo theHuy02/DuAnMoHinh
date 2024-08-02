@@ -16,6 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             unset($_SESSION['cart'][$index]);
             $_SESSION['cart'] = array_values($_SESSION['cart']);
         } else {
+            // Thong bao
             echo 'Sản phầm ko tồn tại trong giỏ hàng';
         }
     }

@@ -17,6 +17,7 @@
         width: 40%;
         padding: 20px;
         box-sizing: border-box;
+        /* margin-bottom: 20px; */
     }
 
     h2 {

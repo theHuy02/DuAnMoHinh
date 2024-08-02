@@ -1378,6 +1378,7 @@ li.ec-brand-item {
 }
 .category-sidebar .cat-sidebar .ec-sb-pro-sl .ec-sb-pro-sl-item .ec-pro-content .ec-price span.old-price {
   font-size: 13px;
+  /*font-weight: bold;*/
   margin-right: 15px;
   text-decoration: line-through;
   color: #777;

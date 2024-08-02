@@ -1,7 +1,7 @@
 <?php
 
 
-//------------------------------ đơn hàng--------------------------
+//------------------------------ Đơn hàng--------------------------
 function loadall_donhang()
 {
     $sql = "SELECT * FROM `tbl_order` ORDER BY `tbl_order`.`id_order` DESC";
