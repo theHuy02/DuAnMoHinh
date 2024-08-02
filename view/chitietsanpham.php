@@ -109,7 +109,7 @@
                                                             class="ecicon eci-twitter"></i></a></li>
                                                 <li class="list-inline-item instagram"><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fkynguyen2204%3Figshid%3DMTNiYzNiMzkwZA%253D%253D%26fbclid%3DIwAR2K41JicdOQYUM9t5_607zJOs6DuWK7X5Bx2wwkW8iZN7J__j0heQAxT-g&h=AT3GSDTAfcS5V8P9sydVKIuXm1_lE6hRdw12NsYK4V-pYfs5FjeQFIBih_JR95RnHucHeTjNwmzkSUUT9nKMGKTrEjZjIv6GZaIUfLrWuC4mMAD2MV2UIrCShMX02fsW_br0Zsq6K3N1qIMHTlee0A"><i
                                                             class="ecicon eci-instagram"></i></a></li>
-                                                <li class="list-inline-item youtube-play"><a href="https://youtu.be/TlE-fZDzuuk?feature=shared"><i
+<li class="list-inline-item youtube-play"><a href="https://youtu.be/TlE-fZDzuuk?feature=shared"><i
                                                             class="ecicon eci-youtube-play"></i></a></li>
                                             </ul>
                                         </div>
@@ -140,7 +140,7 @@
                 <form action="index.php?act=chitiet&idsp=<?=$id?>" method="POST">
                     <input type="hidden" name="idpro" value="<?=$id?>">
                     <input type="text" name="noidung" placeholder="nhập bình luận của bạn">
-                    <input class="gui" type="submit" name="guibinhluan" value="Gửi bình luận">
+                    <button class="gui" type="submit" name="guibinhluan" style="background:#AAAAAA" >Gửi</button>
                 </form>
             </div>
 
