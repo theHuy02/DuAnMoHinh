@@ -19,6 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $index = false;
     if (!empty($_SESSION['cart'])) {
         $index = array_search($productId, array_column($_SESSION['cart'], 'id'));
+        //nguyen
     }
     
     // array_column() trích xuất một cột từ mảng giỏ hàng và trả về một mảng chứ giá trị của cột id
