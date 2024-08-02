@@ -39,22 +39,22 @@ if (is_array($sanpham)) {
     extract($sanpham);
 }
 $hinhpath = "../upload/" . $img;
-$hinhpath1 = "../upload/" . $img1;
-$hinhpath2 = "../upload/" . $img2;
-$hinhpath3 = "../upload/" . $img3;
-$hinhpath4 = "../upload/" . $img4;
+// $hinhpath1 = "../upload/" . $img1;
+// $hinhpath2 = "../upload/" . $img2;
+// $hinhpath3 = "../upload/" . $img3;
+// $hinhpath4 = "../upload/" . $img4;
 if (is_file($hinhpath)) {
     $hinh = "<img src='" . $hinhpath . "' height = '200' width= '300'>";
-    $hinh1 = "<img src='" . $hinhpath1 . "' height = '200' width= '300'>";
-    $hinh2 = "<img src='" . $hinhpath2 . "' height = '200' width= '300'>";
-    $hinh3 = "<img src='" . $hinhpath3 . "' height = '200' width= '300'>";
-    $hinh4 = "<img src='" . $hinhpath4 . "' height = '200' width= '300'>";
+    // $hinh1 = "<img src='" . $hinhpath1 . "' height = '200' width= '300'>";
+    // $hinh2 = "<img src='" . $hinhpath2 . "' height = '200' width= '300'>";
+    // $hinh3 = "<img src='" . $hinhpath3 . "' height = '200' width= '300'>";
+    // $hinh4 = "<img src='" . $hinhpath4 . "' height = '200' width= '300'>";
 } else {
     $hinh = "No profile picture ";
-    $hinh1 = "no photo1";
-    $hinh2 = "no photo2";
-    $hinh3 = "no photo3";
-    $hinh4 = "no photo4";
+    // $hinh1 = "no photo1";
+    // $hinh2 = "no photo2";
+    // $hinh3 = "no photo3";
+    // $hinh4 = "no photo4";
 }
 ?>
     <!-- Content start -->
@@ -141,13 +141,13 @@ if (is_file($hinhpath)) {
                                         <hr>
                                             <?=$hinh?>
                                             <hr>
-                                            <?=$hinh1?>
+                                            <!-- <?=$hinh1?>
                                             <hr>
                                             <?=$hinh2?>
                                             <hr>
                                             <?=$hinh3?>
                                             <hr>
-                                            <?=$hinh4?>
+                                            <?=$hinh4?> -->
                                             <hr>
 
 

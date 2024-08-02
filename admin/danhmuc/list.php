@@ -115,6 +115,21 @@
 								</div>
 							</div>
 						</main>
+
+						
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const deleteLinks = document.querySelectorAll('a[href*="act=xoadm&id="]');
+        
+        deleteLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                if (!confirm('Bạn có chắc chắn muốn xóa danh mục này không?')) {
+                    event.preventDefault(); // Ngăn chặn hành động xóa nếu người dùng chọn "Cancel"
+                }
+            });
+        });
+    });
+</script>
 						<!-- Content end -->
 </body>
 </html>
