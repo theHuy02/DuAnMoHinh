@@ -62,4 +62,6 @@ $extraData = "";
     //Chỉ là một ví dụ, vui lòng kiểm tra thêm ở đó
 
     header('Location: ' . $jsonResult['payUrl']);
+
+// thanh toan momo
 ?>
