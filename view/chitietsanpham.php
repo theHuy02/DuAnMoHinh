@@ -1,48 +1,53 @@
 <style>
-    .ec-single-desc {
-        width: 770px;
-        text-align: center;
-    }
-    .box_content2 {
-        width: 100%;
-        min-height: 200px;
-        padding: 20px;
-        background: #EEEE;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        margin-top: 20px;
-    }
-    .box_search input {
-        margin-top: 9px;
-        padding: 5px 10px;
-        background-color: #ffffff;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        margin-bottom: 10px;
-    }
-    .gui {
-        text-align: center;
-        margin-top: 9px;
-        padding: 5px 10px;
-        background-color: #ffffff;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        margin-bottom: 10px;
-    }
-    input {
-        height: 40px;
-    }
-    .bl tr td {
-        padding: 10px;
-        width: 80px;
-    }
+.ec-single-desc {
+    width: 770px;
+    text-align: center;
+}
+
+.box_content2 {
+    width: 100%;
+    min-height: 200px;
+    padding: 20px;
+    background: #EEEE;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.box_search input {
+    margin-top: 9px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.gui {
+    text-align: center;
+    margin-top: 9px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+input {
+    height: 40px;
+}
+
+.bl tr td {
+    padding: 10px;
+    width: 80px;
+}
 </style>
 
 <!-- Sart Single product -->
 <section class="ec-page-content section-space-p">
-        <div class="container">
-            <div class="row">
-                <div class="ec-pro-rightside ec-common-rightside col-lg-9 order-lg-last col-md-12 order-md-first">
+    <div class="container">
+        <div class="row">
+            <div class="ec-pro-rightside ec-common-rightside col-lg-9 order-lg-last col-md-12 order-md-first">
 
 
                 <?php
@@ -54,136 +59,143 @@
                 $hinh1 = $img_path . $img1;
 
 ?>
-                    <!-- Single product content Start -->
-                    <div class="single-pro-block">
-                        <div class="single-pro-inner">
-                            <div class="row">
-                                <div class="single-pro-img">
-                                    <div class="single-product-scroll">
-                                        <div class="single-product-cover">
-                                            <div class="">
-                                                <img class="img-responsive" src="<?=$hinh ?>"
-                                                    alt="" width="467px" height="400px" >
-                                            </div>
-                                            <div class="">
-                                                <img class="img-responsive" src="<?=$hinh1 ?>"
-                                                    alt=""width="467px" height="400px">
-                                            </div>
+                <!-- Single product content Start -->
+                <div class="single-pro-block">
+                    <div class="single-pro-inner">
+                        <div class="row">
+                            <div class="single-pro-img">
+                                <div class="single-product-scroll">
+                                    <div class="single-product-cover">
+                                        <div class="">
+                                            <img class="img-responsive" src="<?=$hinh ?>" alt="" width="467px"
+                                                height="400px">
                                         </div>
-                                        <div class="single-nav-thumb">
-                                            <div class="single-slide">
-                                                <img class="img-responsive" src="<?=$hinh ?>"
-                                                    alt="" width="100px" height="70px">
-                                            </div>
-                                            <div class="single-slide">
-                                                <img class="img-responsive" src="<?=$hinh1 ?>"
-                                                    alt=""width="100px" height="70px">
-                                            </div>
+                                        <div class="">
+                                            <img class="img-responsive" src="<?=$hinh1 ?>" alt="" width="467px"
+                                                height="400px">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="single-pro-desc">
-                                    <div class="single-pro-content">
-                                        <h5 class="ec-single-title"><?=$name ?></h5>
-                                        
-                                        <div class="ec-single-desc"><?=$mota ?></div>
-                                        <h5 class="single-price">số lượng còn lại: <?=$soluong ?></h5>
-                                        <div class="ec-single-price-stoke">
-                                            <div class="ec-single-price">
-                                            <span class="ec-price">
-                                                <span class="new-price" style="color:red;"> <?= number_format((int)$price, 0, ",", ".") ?> VNĐ</span>
-                                            </span>
-                                            </div>
-                                            
+                                    <div class="single-nav-thumb">
+                                        <div class="single-slide">
+                                            <img class="img-responsive" src="<?=$hinh ?>" alt="" width="100px"
+                                                height="70px">
                                         </div>
-
-
-                                        <div class="ec-single-qty">
-                                            <!-- <div class="qty-plus-minus">
-                                                <input class="qty-input" type="text" name="ec_qtybtn" value="1" />
-                                            </div> -->
-                                            <div class="ec-single-cart ">
-                                            <button class="add-to-cart"style=" background-color: #0099; padding:10px; color:	#ffffff"
-                                             data-id="<?= $id ?>" onclick="addToCart(<?= $id ?>,'<?= $name ?>',<?= $price ?>)" > Add To Cart</button>
-                                            </div>
-                                        </div>
-                                        <div class="ec-single-social">
-                                            <ul class="mb-0">
-                                                <li class="list-inline-item facebook"><a href="#"><i
-                                                            class="ecicon eci-facebook"></i></a></li>
-                                                <li class="list-inline-item twitter"><a href="#"><i
-                                                            class="ecicon eci-twitter"></i></a></li>
-                                                <li class="list-inline-item instagram"><a href="#"><i
-                                                            class="ecicon eci-instagram"></i></a></li>
-<li class="list-inline-item youtube-play"><a href="https://youtu.be/TlE-fZDzuuk?feature=shared"><i
-                                                            class="ecicon eci-youtube-play"></i></a></li>
-                                            </ul>
+                                        <div class="single-slide">
+                                            <img class="img-responsive" src="<?=$hinh1 ?>" alt="" width="100px"
+                                                height="70px">
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="single-pro-desc">
+                                <div class="single-pro-content">
+                                    <h5 class="ec-single-title"><?=$name ?></h5>
+
+                                    <div class="ec-single-desc"><?=$mota ?></div>
+                                    <h5 class="single-price">số lượng còn lại: <?=$soluong ?></h5>
+                                    <div class="ec-single-price-stoke">
+                                        <div class="ec-single-price">
+                                            <span class="ec-price">
+                                                <span class="new-price" style="color:red;">
+                                                    <?= number_format((int)$price, 0, ",", ".") ?> VNĐ</span>
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="ec-single-qty">
+                                        <!-- <div class="qty-plus-minus">
+                                                <input class="qty-input" type="text" name="ec_qtybtn" value="1" />
+                                            </div> -->
+                                        <div class="ec-single-cart ">
+                                            <button class="add-to-cart"
+                                                style=" background-color: #0099; padding:10px; color:	#ffffff"
+                                                data-id="<?= $id ?>"
+                                                onclick="addToCart(<?= $id ?>,'<?= $name ?>',<?= $price ?>)"> Add To
+                                                Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="ec-single-social">
+                                        <ul class="mb-0">
+                                            <li class="list-inline-item facebook"><a href="#"><i
+                                                        class="ecicon eci-facebook"></i></a></li>
+                                            <li class="list-inline-item twitter"><a href="#"><i
+                                                        class="ecicon eci-twitter"></i></a></li>
+                                            <li class="list-inline-item instagram"><a href="#"><i
+                                                        class="ecicon eci-instagram"></i></a></li>
+                                            <li class="list-inline-item youtube-play"><a
+                                                    href="https://youtu.be/TlE-fZDzuuk?feature=shared"><i
+                                                        class="ecicon eci-youtube-play"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- alt -->
+                            </div>
                         </div>
                     </div>
-                    <!--Single product content End -->
+                </div>
+                <!--Single product content End -->
 
-                    <!-- Single product tab start -->
-                    <div class="mb">
-            <div class="box_title">BÌNH LUẬN</div>
-            <div class="box_content2  product_portfolio binhluan ">
-                <table class="bl">
-                    <?php foreach($binhluan as $value): ?>
-                    <tr>
-                    <td> <?php  echo $value['user']?></td>
+                <!-- Single product tab start -->
+                <div class="mb">
+                    <div class="box_title">BÌNH LUẬN</div>
+                    <div class="box_content2  product_portfolio binhluan ">
+                        <table class="bl">
+                            <?php foreach($binhluan as $value): ?>
+                            <tr>
+                                <td> <?php  echo $value['user']?></td>
 
-                        <td style ="width: 600px"><?php echo $value['noidung']?></td>
-                       
-                        <td><?php echo date("d/m/Y", strtotime($value['ngaybinhluan'])) ?></td>
-                    </tr>
-                    <?php endforeach; ?>
-                </table>
-            </div>
-            <div class="box_search">
-                <form action="index.php?act=chitiet&idsp=<?=$id?>" method="POST">
-                    <input type="hidden" name="idpro" value="<?=$id?>">
-<<<<<<< HEAD
-                    <input type="text" name="noidung" placeholder="nhập bình luận của bạn">
-=======
-                    <input type="text" name="noidung" placeholder="Nhập bình luận của bạn">
->>>>>>> b3e9966d2cf83942645d5caf424e860ae7891894
-                    <button class="gui" type="submit" name="guibinhluan" style="background:#AAAAAA" >Gửi</button>
-                </form>
-            </div>
+                                <td style="width: 600px"><?php echo $value['noidung']?></td>
 
-        </div>
+                                <td><?php echo date("d/m/Y", strtotime($value['ngaybinhluan'])) ?></td>
+                            </tr>
+                            <?php endforeach; ?>
+                        </table>
                     </div>
-                    <!-- product details description area end -->
+                    <div class="box_search">
+                        <form action="index.php?act=chitiet&idsp=<?=$id?>" method="POST">
+                            <input type="hidden" name="idpro" value="<?=$id?>">
+                            <<<<<<< HEAD <input type="text" name="noidung" placeholder="nhập bình luận của bạn">
+                                =======
+                                <input type="text" name="noidung" placeholder="Nhập bình luận của bạn">
+                                >>>>>>> b3e9966d2cf83942645d5caf424e860ae7891894
+                                <button class="gui" type="submit" name="guibinhluan"
+                                    style="background:#AAAAAA">Gửi</button>
+                        </form>
+                    </div>
+
                 </div>
             </div>
+            <!-- product details description area end -->
         </div>
-    </section>
-    <!-- End Single product -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </div>
+    </div>
+</section>
+<!-- End Single product -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
-    let totalProduct = document.getElementById('totalProduct');
-    function addToCart(productId, productName, productPrice) {
-        // console.log(productId, productName, productPrice);
-        // Sử dụng jQuery
-        $.ajax({
-            type: 'POST',
-            // Đường dẫ tới tệp PHP xử lý dữ liệu
-            url: './view/addToCart.php',
-            data: {
-                id: productId,
-                name: productName,
-                price: productPrice
-            },
-            success: function(response) {
-                totalProduct.innerText = response;
-                alert('Bạn đã thêm sản phẩm vào giỏ hàng thành công!')
-            },
-            error: function(error) {
-                console.log(error);
-            }
-        });
-    }
+let totalProduct = document.getElementById('totalProduct');
+
+function addToCart(productId, productName, productPrice) {
+    // console.log(productId, productName, productPrice);
+    // Sử dụng jQuery
+    $.ajax({
+        type: 'POST',
+        // Đường dẫ tới tệp PHP xử lý dữ liệu
+        url: './view/addToCart.php',
+        data: {
+            id: productId,
+            name: productName,
+            price: productPrice
+        },
+        success: function(response) {
+            totalProduct.innerText = response;
+            alert('Bạn đã thêm sản phẩm vào giỏ hàng thành công!')
+        },
+        error: function(error) {
+            console.log(error);
+        }
+    });
+}
 </script>
