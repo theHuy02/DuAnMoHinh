@@ -140,6 +140,7 @@ input {
                 <!-- Single product tab start -->
                 <div class="mb">
                     <div class="box_title">BÌNH LUẬN</div>
+                    <!-- binhluan -->
                     <div class="box_content2  product_portfolio binhluan ">
                         <table class="bl">
                             <?php foreach($binhluan as $value): ?>
