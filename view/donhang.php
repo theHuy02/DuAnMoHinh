@@ -45,6 +45,7 @@
             <th>SĐT</th>
             <!-- sdt -->
             <th>Địa Chỉ</th>
+            <!-- diachi -->
             <th>Tổng tiền</th>
             <th>Phương Thức Thanh Toán</th>
             <th>Trạng thái đơn hàng</th>
