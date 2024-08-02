@@ -40,6 +40,7 @@
     <table>
         <tr>
             <th>STT</th>
+            <!-- hoten -->
             <th>Họ tên</th>
             <th>SĐT</th>
             <th>Địa Chỉ</th>
