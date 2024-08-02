@@ -37,6 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo count($_SESSION['cart']);
 } else {
     echo 'Yêu cầu không hợp lệ';
+    // aaa
 }
 // <div>
 // </div>
