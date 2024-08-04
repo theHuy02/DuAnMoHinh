@@ -22,9 +22,11 @@
 
 <!-- Other Vendors JS -->
 <script src="../view/vendors/apexcharts/apexcharts.js"></script>
+<!-- <script src="../view/js/pages/project-dashboard.js"></script> -->
 
 <!-- Page js -->
 <script src="../view/js/pages/project-dashboard.js"></script>
+<!-- <script src="../view/js/pages/project-dashboard.js"></script> -->
 
 <!-- Core JS -->
 <script src="../view/js/app.min.js"></script>
