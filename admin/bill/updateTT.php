@@ -13,6 +13,7 @@ if(is_array($suadh)){
                                     <option value="3">Đang giao hàng</option>
                                     <option value="4">Đã nhận hàng</option>
                                     <option value="5">Đơn hàng bị hủy</option>
+                                    <!-- <a href="index.php?act=listtk" class="btn">DANH SÁCH</a> -->
                                 </select>
                             </div>
                         </div>
@@ -37,6 +38,7 @@ if(is_array($suadh)){
                                 <th class="border-top-0">Phương thức thanh toán</th>
                                 <th class="border-top-0">Tổng hóa đơn</th>
                                 <th class="border-top-0">Cập nhật</th>
+                                <!-- <a href="index.php?act=listtk" class="btn">DANH SÁCH</a> -->
                             </tr>
                         </thead>
                         <tbody>
