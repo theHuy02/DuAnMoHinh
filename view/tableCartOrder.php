@@ -45,7 +45,7 @@ if (!empty($_SESSION['cart'])) {
                 <?= number_format((int)$product['price'] * (int)$quantityInCart, 0, ",", ".") ?> VNĐ
             </td>
             <td>
-                <button>Xóa</button>
+                <button onclick="removeFromCart(<?= $product['id'] ?>)">Xóa</button>
             </td>
         </tr>
     <?php
@@ -74,3 +74,24 @@ if (!empty($_SESSION['cart'])) {
 <?php
 }
 ?>
+<script>
+    function removeFromCart(id) {
+    if (confirm("Bạn có đồng ý xóa sản phẩm hay không?")) {
+        $.ajax({
+            type: 'POST',
+            url: './view/removeFormCart.php',
+            data: {
+                id: id
+            },
+            success: function(response) {
+                $.post('view/tableCartOrder.php', function(data) {
+                    $('#order').html(data);
+                });
+            },
+            error: function(error) {
+                console.log(error);
+            },
+        });
+    }
+}
+</script>

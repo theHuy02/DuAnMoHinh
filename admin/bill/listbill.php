@@ -15,14 +15,14 @@ if (isset($_GET['id']) && isset($_GET['status'])) {
 }  
 ?>    
 <style>
-    /* Định dạng bảng */
+    /* Định dạng bảnggg */
     .table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 20px;
     }
 
-    /* Định dạng header của bảng */
+    /* Định dạng header của bảngggg */
     .table th {
       background-color: #f2f2f2;
       text-align: center;
@@ -30,17 +30,17 @@ if (isset($_GET['id']) && isset($_GET['status'])) {
       font-weight: bold;
     }
 
-    /* Định dạng dòng chẵn của bảng */
+    /* Định dạng dòng chẵn của bảnggggg */
     .table tr:nth-child(even) {
       background-color: #f9f9f9;
     }
 
-    /* Định dạng dòng lẻ của bảng */
+    /* Định dạng dòng lẻ của bảngggg */
     .table tr:nth-child(odd) {
       background-color: #ffffff;
     }
 
-    /* Định dạng cột cuối cùng của bảng */
+    /* Định dạng cột cuối cùng của bảngggg */
     .table td:last-child {
       text-align: center;
     }
@@ -73,6 +73,9 @@ if (isset($_GET['id']) && isset($_GET['status'])) {
             <label for="end_date">Đến ngày:</label>
             <input type="date" id="end_date" name="end_date">
             <button type="submit" name="filter">Lọc Đơn</button>
+            <!-- <label for="end_date">Đến ngày:</label>
+            <input type="date" id="end_date" name="end_date">
+            <button type="submit" name="filter">Lọc Đơn</button> -->
         </div>
         <!-- Table start -->
         <table class="table table-primary">
