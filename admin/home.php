@@ -14,4 +14,8 @@
 							</div>
 						</main>
 						<!-- Content end -->
+						 <!-- Core Vendors JS
+						 Core Vendors JS
+						 Core Vendors JS -->
+						 <!-- Core Vendors JS -->
 							<!-- Core Vendors JS -->
