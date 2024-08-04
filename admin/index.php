@@ -23,7 +23,7 @@ if (isset($_GET['act'])) {
                 insert_danhmuc($tenloai);
                 $thongbao = 'More success';
             }
-
+                 
             include 'danhmuc/add.php';
             break;
 
@@ -228,4 +228,5 @@ if (isset($_GET['act'])) {
 }
     
 include 'footer.php';
+
 ?>

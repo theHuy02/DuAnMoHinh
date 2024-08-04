@@ -102,4 +102,18 @@
 						</main>
 						<!-- Content end -->
 </body>
+<!-- confirm san phamr -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const deleteLinks = document.querySelectorAll('a[href*="act=xoasp&id="]');
+        
+        deleteLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                if (!confirm('Bạn có chắc chắn muốn xóa sản phẩm này không?')) {
+                    event.preventDefault(); // Ngăn chặn hành động xóa nếu người dùng chọn "Cancel"
+                }
+            });
+        });
+    });
+</script>
 </html>

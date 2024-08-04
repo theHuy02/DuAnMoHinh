@@ -41,7 +41,7 @@
 </head>
 <body>
 <h1>Shopping Cart</h1>
-
+<!-- cap nhap gio hang -->
 <div class="shopping-cart">
 
   <div class="column-labels">

@@ -5,18 +5,21 @@ session_start();
 if (!isset($_SESSION['cart'])) {
     // Nếu không có thì đi khởi tạo
     $_SESSION['cart'] = [];
+    // 1111
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Lấy dữ liệu từ ajax đẩy lên
     $productId = $_POST['id'];
+    //baitap
     $productName = $_POST['name'];
     $productPrice = $_POST['price'];
-
+    // nhom5
     // Kiểm tra sản phẩm đã có trong giỏ hàng chưa
     $index = false;
     if (!empty($_SESSION['cart'])) {
         $index = array_search($productId, array_column($_SESSION['cart'], 'id'));
+        //nguyen
     }
     
     // array_column() trích xuất một cột từ mảng giỏ hàng và trả về một mảng chứ giá trị của cột id
@@ -28,6 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'id' => $productId,
             'name' => $productName,
             'price' => $productPrice,
+            // van
             'quantity' => 1
         ];
         $_SESSION['cart'][] = $product;
@@ -37,6 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo count($_SESSION['cart']);
 } else {
     echo 'Yêu cầu không hợp lệ';
+    // aaa
 }
 // <div>
 // </div>

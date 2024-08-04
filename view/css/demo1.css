@@ -96,6 +96,7 @@
   src: url("../fonts/montserrat/Montserrat-SemiBold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
+  /* color: #000; */
 }
 @font-face {
   font-family: "Montserrat";
