@@ -67,6 +67,7 @@
 												<i class="fa-solid fa-list-ul fa-sm"></i>
 												<a class="h-full w-full flex items-center" href="index.php?act=listtk">
 													<span>Danh sách tài khoản</span>
+													<!-- <span>Danh sách tài khoản</span> -->
 												</a>
 											</li>
 										</ul>
@@ -75,6 +76,7 @@
 										<div class="menu-collapse-item">
 											<i class="fa-brands fa-pagelines fa-lg"></i>
 											<span class="menu-item-text">Quản Lý Sản Phẩm</span>
+											<!-- <span class="menu-item-text">Quản Lý Sản Phẩm</span> -->
 										</div>
 										<ul>
 											<li data-menu-item="modern-product-list" class="menu-item">
@@ -82,6 +84,7 @@
 												<a class="h-full w-full flex items-center"
 													href="index.php?act=listsp">
 													<span>Danh Sách Sản Phẩm</span>
+													<!-- <span>Danh Sách Sản Phẩm</span> -->
 												</a>
 											</li>
 											
@@ -90,6 +93,7 @@
 												<a class="h-full w-full flex items-center"
 													href="index.php?act=addsp">
 													<span>Thêm Sản Phẩm</span>
+													<!-- <span>Thêm Sản Phẩm</span> -->
 												</a>
 											</li>
 
@@ -99,6 +103,7 @@
 										<div class="menu-collapse-item">
 											<i class="fa-regular fa-folder fa-lg"></i>
 											<span class="menu-item-text">Quản Lý Danh Mục</span>
+											<!-- <span class="menu-item-text">Quản Lý Danh Mục</span> -->
 										</div>
 										<ul>
 											<li data-menu-item="modern-folder-list" class="menu-item">
@@ -106,6 +111,7 @@
 												<a class="h-full w-full flex items-center"
 													href="index.php?act=listdm">
 													<span>Danh Sách Danh Mục</span>
+													<!-- <span>Danh Sách Danh Mục</span> -->
 												</a>
 											</li>
 											
@@ -114,6 +120,7 @@
 												<a class="h-full w-full flex items-center"
 													href="index.php?act=adddm">
 													<span>Thêm Danh Mục</span>
+													<!-- <span>Thêm Danh Mục</span> -->
 												</a>
 											</li>
 											
