@@ -16,10 +16,12 @@ if(is_array($suadh)){
             background-color: #f5f5f5;
             margin: 0;
             padding: 0;
+            /* background-color: #f5f5f5; */
         }
 
         h3 {
             color: #333;
+            /* background-color: #f5f5f5; */
         }
 
         table {
@@ -28,26 +30,31 @@ if(is_array($suadh)){
             width: 80%;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* background-color: #f5f5f5; */
         }
 
         th, td {
             padding: 15px;
             text-align: left;
             border-bottom: 1px solid #ddd;
+            /* background-color: #f5f5f5; */
         }
 
         th {
             background-color: #f2f2f2;
+            /* background-color: #f5f5f5; */
         }
 
         input[type="text"] {
             width: 100%;
             padding: 8px;
             box-sizing: border-box;
+            /* background-color: #f5f5f5; */
         }
 
         .row {
             margin: 20px 0;
+            /* background-color: #f5f5f5; */
         }
 
         .btn {
@@ -55,11 +62,13 @@ if(is_array($suadh)){
             background-color: rgb(105, 193, 234);
             color: #fff;
             text-decoration: none;
+            /* background-color: #f5f5f5; */
             border-radius: 5px;
         }
 
         .btn-reset {
             background-color: rgb(105, 193, 234);
+            /* background-color: #f5f5f5; */
         }
     </style>
 </head>
