@@ -380,7 +380,7 @@
             },
             success: function(response) {
                 totalProduct.innerText = response;
-                alert('Bạn đã thêm sản phẩm vào giỏ hàng thành công!')
+                alert('Thêm vào giỏ hàng thành công!')
             },
             error: function(error) {
                 console.log(error);

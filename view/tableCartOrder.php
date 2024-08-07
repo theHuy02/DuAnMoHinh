@@ -39,7 +39,8 @@ if (!empty($_SESSION['cart'])) {
             <td><?= $product['name'] ?></td>
               <td>  <?= number_format((int)$product['price'], 0, ",", ".")  ?> VNĐ</td>
             <td>
-                <input type="number" value="<?= $quantityInCart ?>" min="1" id="quantity_<?= $product['id'] ?>" oninput="updateQuantity(<?= $product['id'] ?>, <?= $key ?>)">
+                <input type="number" value="<?= $quantityInCart ?>" min="1" id="quantity_<?= $product['id'] ?>" 
+                oninput="updateQuantity(<?= $product['id'] ?>, <?= $key ?>, <?= $product['soluong'] ?>)">
             </td>
             <td>
                 <?= number_format((int)$product['price'] * (int)$quantityInCart, 0, ",", ".") ?> VNĐ

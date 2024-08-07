@@ -289,7 +289,7 @@
                                 <li><a href="index.php">Home</a></li>
                                 <li class="dropdown position-static"><a href="index.php?act=sanpham">Sản Phẩm</a>
 
-                                <li class="dropdown"><a href="#">Pages</a>
+                                <li class="dropdown"><a href="https://www.facebook.com/profile.php?id=100068671907867&mibextid=LQQJ4d">Pages</a>
                                 </li>
                                 <li class="dropdown"><span class="main-label-note-new" data-toggle="tooltip"
                                         title="NEW"></span><a href="index.php?act=donhang">Đơn Hàng</a>

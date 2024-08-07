@@ -2,12 +2,12 @@
     <thead>
         <tr align="center">
             <td>STT</td>
-            <td>Image</td>
-            <td>Name</td>
-            <td>Price</td>
-            <td>Quantity</td>
-            <td>Total Price</td>
-            <td>Action</td>
+            <td>Hình ảnh</td>
+            <td>Tên</td>
+            <td>Giá</td>
+            <td>Số lượng</td>
+            <td>Tổng tiền</td>
+            <td>Hành động</td>
         </tr>
     </thead>
     <tbody id="order">
@@ -19,8 +19,8 @@
                 // kiểm tra số lượng sản phẩm trong giỏ hàng
                 $quantityInCart = 0;
                 foreach ($_SESSION['cart'] as $item) {
-                    if ($item['id'] == $product['id']) {
-                        $quantityInCart = $item['quantity'];
+                    if ($item['id'] == $product['id']) { // So sánh id trong giỏ hàng với id trên csdl
+                        $quantityInCart = $item['quantity']; // Nếu tìm thấy mặt hàng gán số lượng và dừng vòng lặp
                         break;
                     }
                 }
@@ -55,7 +55,7 @@
 
         <tr>
             <td colspan="5" align="center">
-                <h4>Tổng tiền hàng (5% VAT):</h4>
+                <h4>Tổng tiền hàng (5% thuế):</h4>
             </td>
             <td colspan="2" align="center">
                 <h2>
@@ -77,15 +77,15 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
 function updateQuantity(id, index, availableStock) {
-    let newQuantity = $('#quantity_' + id).val();
+    let newQuantity = $('#quantity_' + id).val(); // Chọn phần tử có input có id và lấy giá trị của trường đó
 
     if (newQuantity <= 0) {
         newQuantity = 1;
         $('#quantity_' + id).val(newQuantity);
-    } else if (newQuantity > availableStock) {
+    } else if (newQuantity > availableStock) { // Kiểm tra xem nếu số lượng lớn hơn số lượng tồn kho
         
         alert('Số lượng sản phẩm không đủ');
-        $('#quantity_' + id).val(availableStock);
+        $('#quantity_' + id).val(availableStock); // Cập nhận về số lượng tối đa
     } else {
         $.ajax({
             type: 'POST',
@@ -93,15 +93,15 @@ function updateQuantity(id, index, availableStock) {
             data: {
                 id: id,
                 quantity: newQuantity
-            },
-            success: function(response) {
-                response = JSON.parse(response);
-                if (response.status === 'success') {
-                    $.post('view/tableCartOrder.php', function(data) {
-                        $('#order').html(data);
+            }, // Gửi yêu cầu tới updatequantity.php với id sản phẩm và số lượng mới
+            success: function(response) { // Nếu yêu cầu thành công 
+                response = JSON.parse(response); // Phản hồi máy chủ
+                if (response.status === 'success') { // Kiểm tra giá trị thuộc tính
+                    $.post('view/tableCartOrder.php', function(data) { // Gửi một yêu cầu POST khác đến tableCartOrder.php để lấy nội dung mới của giỏ hàng.
+                        $('#order').html(data); // Cập nhật giao diện người dùng với thông tin giỏ hàng mới.
                     });
                 } else {
-                    alert(response.message);
+                    alert(response.message); // Không thành công
                 }
             },
             error: function(error) {

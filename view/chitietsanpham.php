@@ -157,10 +157,7 @@ input {
                     <div class="box_search">
                         <form action="index.php?act=chitiet&idsp=<?=$id?>" method="POST">
                             <input type="hidden" name="idpro" value="<?=$id?>">
-                            <<<<<<< HEAD <input type="text" name="noidung" placeholder="nhập bình luận của bạn">
-                                =======
-                                <input type="text" name="noidung" placeholder="Nhập bình luận của bạn">
-                                >>>>>>> b3e9966d2cf83942645d5caf424e860ae7891894
+                            <input type="text" name="noidung" placeholder="nhập bình luận của bạn">                           
                                 <button class="gui" type="submit" name="guibinhluan"
                                     style="background:#AAAAAA">Gửi</button>
                         </form>
