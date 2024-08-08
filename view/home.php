@@ -367,9 +367,7 @@
 <script>
     let totalProduct = document.getElementById('totalProduct');
     function addToCart(productId, productName, productPrice) {
-        // console.log(productId, productName, productPrice);
-        // Sử dụng jQuery
-        $.ajax({
+        $.ajax({ // Gửi yêu cầu AJAX bằng jQuery
             type: 'POST',
             // Đường dẫ tới tệp PHP xử lý dữ liệu
             url: './view/addToCart.php',
@@ -378,8 +376,8 @@
                 name: productName,
                 price: productPrice
             },
-            success: function(response) {
-                totalProduct.innerText = response;
+            success: function(response) { // yêu cầu thành công
+                totalProduct.innerText = response; // Số lượng sản phẩm thêm vào giỏ hàng sẽ hiện HTML 'totalProduct'
                 alert('Thêm vào giỏ hàng thành công!')
             },
             error: function(error) {

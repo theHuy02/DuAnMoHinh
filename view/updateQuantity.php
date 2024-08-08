@@ -6,10 +6,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $productId = $_POST['id'];
     $newQuantity = $_POST['quantity'];
 
-    // Kiểm tra giỏ hàng có tồn tại hay không
-    if (!empty($_SESSION['cart'])) {
-        // Kiểm tra sản phẩm đã có trong giỏ hàng chưa
-        $index = array_search($productId, array_column($_SESSION['cart'], 'id'));
+    if (!empty($_SESSION['cart'])) { // Kiểm Kiểm tra xem giỏ hàng có trống hay không
+        $index = array_search($productId, array_column($_SESSION['cart'], 'id')); // Tìm sản phẩm trong giỏ hàng
 
         // Nếu sản phẩm tồn tại thì cập nhật lại số lượng
         if ($index !== false) {

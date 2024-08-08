@@ -18,7 +18,7 @@
             foreach ($dataDb as $key => $product) {
                 // kiểm tra số lượng sản phẩm trong giỏ hàng
                 $quantityInCart = 0;
-                foreach ($_SESSION['cart'] as $item) {
+                foreach ($_SESSION['cart'] as $item) { // Duyệt qua các sản phẩm trong giỏ hàng hiện tại
                     if ($item['id'] == $product['id']) { // So sánh id trong giỏ hàng với id trên csdl
                         $quantityInCart = $item['quantity']; // Nếu tìm thấy mặt hàng gán số lượng và dừng vòng lặp
                         break;

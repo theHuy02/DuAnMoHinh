@@ -24,7 +24,7 @@ if (!empty($_SESSION['cart'])) {
     foreach ($dataDb as $key => $product) :
         // kiểm tra số lượng sản phẩm trong giỏ hàng
         $quantityInCart = 0;
-        foreach ($_SESSION['cart'] as $item) {
+        foreach ($_SESSION['cart'] as $item) { // Tìm số lượng của sản phẩm đó trong giỏ hàng
             if ($item['id'] == $product['id']) {
                 $quantityInCart = $item['quantity'];
                 break;
