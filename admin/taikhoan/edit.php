@@ -101,6 +101,7 @@ if(is_array($taikhoan)){
             </tr>
             <tr>
                 <th>Role</th>
+                <!-- role -->
                 <td><input type="text" name="role" value="<?php echo $role ?>"></td>
             </tr>
         </table>
