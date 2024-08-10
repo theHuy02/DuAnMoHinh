@@ -32,6 +32,7 @@
 															
 															<th>Directory code</th>
 															<th>Name Directory</th>
+															<!-- name -->
 															<th></th>
 														</tr>
 													</thead>
