@@ -1,5 +1,5 @@
 <!-- <?php
-if(is_array($suadh)){
+if (is_array($suadh)) {
     extract($suadh);
 }
 ?> -->
@@ -38,64 +38,65 @@ if(is_array($suadh)){
                                 <th class="border-top-0">Phương thức thanh toán</th>
                                 <th class="border-top-0">Tổng hóa đơn</th>
                                 <th class="border-top-0">Cập nhật</th>
-                                <!-- <a href="index.php?act=listtk" class="btn">DANH SÁCH</a> -->
+                                
                             </tr>
                         </thead>
                         <tbody>
                             <?php
-                            foreach($listdonhang as $dh){
-                                extract($dh); 
-                                $linkcn = "index.php?act=cnhd&idhd=".$id_hd;
-                                foreach($listusers as $lus){
-                                    extract($lus);
-                                    if($idacc == $iduser){?>
+foreach ($listdonhang as $dh) {
+    extract($dh);
+    $linkcn = "index.php?act=cnhd&idhd=" . $id_hd;
+    foreach ($listusers as $lus) {
+        extract($lus);
+        if ($idacc == $iduser) {?>
                                 <tr>
-                                    <td>#<?= $id_hd ?></td>
-                                    <td><?= $phone ?></td>
-                                    <td><?= $ngaydat ?></td>
+                                    <td>#<?=$id_hd?></td>
+                                    <td><?=$phone?></td>
+                                    <td><?=$ngaydat?></td>
                                     <td>
                                         <?php
-                                        if($trangthai == 0) {
-                                            echo "Chờ xác nhận.";
-                                        } else if($trangthai == 1) {
-                                            echo "Đã xác nhận.";
-                                        } else if($trangthai == 2) {
-                                            echo "Đang chuẩn bị hàng.";
-                                        } else if($trangthai == 3) {
-                                            echo "Đang giao hàng.";
-                                        } else if($trangthai == 4) {
-                                            echo "Đã nhận hàng.";
-                                        } else if($trangthai == 5) {
-                                            echo "Đơn hàng bị hủy.";
-                                        }
-                                        ?>
+if ($trangthai == 0) {
+            echo "Chờ xác nhận.";
+        } else if ($trangthai == 1) {
+            echo "Đã xác nhận.";
+        } else if ($trangthai == 2) {
+            echo "Đang chuẩn bị hàng.";
+        } else if ($trangthai == 3) {
+            echo "Đang giao hàng.";
+        } else if ($trangthai == 4) {
+            echo "Đã nhận hàng.";
+        } else if ($trangthai == 5) {
+            echo "Đơn hàng bị hủy.";
+        }
+            ?>
                                     </td>
                                     <td>
                                         <?php
-                                        if($trangthaitt == 0) {
-                                            echo "Chưa thanh toán.";
-                                        } else if($trangthaitt == 1) {
-                                            echo "Đã thanh toán.";
-                                        }
-                                        ?>
+if ($trangthaitt == 0) {
+                echo "Chưa thanh toán.";
+            } else if ($trangthaitt == 1) {
+                echo "Đã thanh toán.";
+            }
+            ?>
                                         </td>
                                     <td>
                                         <?php
-                                        if($pttt == 1) {
-                                            echo "Thanh toán trực tiếp.";
-                                        } else if($pttt == 1) {
-                                            echo "Thanh toán VNPAY.";
-                                        }
-                                        ?>
+if ($pttt == 1) {
+                echo "Thanh toán trực tiếp.";
+            } else if ($pttt == 1) {
+                echo "Thanh toán VNPAY.";
+            }
+            ?>
                                     </td>
-                                    <td><?= number_format((int)$tonghd, 0, ",", ".") ?></td>
+                                    <td><?=number_format((int) $tonghd, 0, ",", ".")?></td>
                                     <td>
-                                    <a href="<?= $linkcn ?>" class="fas fa-edit"></a>
+                                    <a href="<?=$linkcn?>" class="fas fa-edit"></a>
                                     </td>
                                 </tr>
                             <?php }
-                                        } }
-                            ?>
+    }
+}
+?>
                         </tbody>
                     </table>
                 </div>
