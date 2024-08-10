@@ -96,7 +96,6 @@ if (isset($_POST['filter'])) {
 }
 ?>
 
-                <!-- Table start -->
                 <table class="table table-primary">
                     <tr>                   
                         <th></th>
