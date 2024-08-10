@@ -86,6 +86,7 @@ if(is_array($taikhoan)){
             </tr>
             <tr>
                 <th>Email</th>
+                <!-- email -->
                 <td><input type="text" name="email" value="<?php echo $email ?>"></td>
             </tr>
             <tr>
