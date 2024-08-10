@@ -35,6 +35,7 @@
 															<th>Image</th>
 															<!-- image -->
 															<th>price</th>
+															<!-- price -->
 															<th>Số Lượng</th>
 														</tr>
 													
