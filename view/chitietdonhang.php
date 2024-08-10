@@ -101,8 +101,7 @@ table.ec-table tbody tr:nth-of-type(odd) {
                     </div>
 
                 </div>
-                <!-- /.col -->
-                <!-- /.col -->
+            
             </div>
 
             <div class="mt-4">
