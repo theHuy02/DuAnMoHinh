@@ -112,6 +112,7 @@
 												<a class="h-full w-full flex items-center"
 													href="index.php?act=listdm">
 													<span>Danh Sách Danh Mục</span>
+													<!-- danhsach -->
 													<!-- <span>Danh Sách Danh Mục</span> -->
 												</a>
 											</li>
