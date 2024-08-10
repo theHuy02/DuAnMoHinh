@@ -25,8 +25,7 @@ $onedh = loadone_donhang();
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <!-- /.col -->
-                                                <!-- /.col -->
+                                                
                                             </div>
 
                                             <div class="mt-4">
