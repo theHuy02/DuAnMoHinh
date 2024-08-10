@@ -71,6 +71,7 @@ if(is_array($taikhoan)){
         <table>
             <tr>
                 <th>User</th>
+                <!-- user -->
                 <td><input type="text" name="user" value="<?php echo $user ?>"></td>
             </tr>
             <tr>
