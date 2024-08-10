@@ -31,6 +31,7 @@
 														<tr>
 														<th>ID</th>
 															<th>Name Product</th>
+															<!-- name product -->
 															<th>Image</th>
 															<th>price</th>
 															<th>Số Lượng</th>
