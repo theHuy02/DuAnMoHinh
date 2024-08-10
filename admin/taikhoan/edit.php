@@ -96,6 +96,7 @@ if(is_array($taikhoan)){
             </tr>
             <tr>
                 <th>Address</th>
+                <!-- address -->
                 <td><input type="text" name="addre" value="<?php echo $address ?>"></td>
             </tr>
             <tr>
