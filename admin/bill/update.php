@@ -30,31 +30,31 @@ if(is_array($suadh)){
             width: 80%;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            /* background-color: #f5f5f5; */
+            
         }
 
         th, td {
             padding: 15px;
             text-align: left;
             border-bottom: 1px solid #ddd;
-            /* background-color: #f5f5f5; */
+           
         }
 
         th {
             background-color: #f2f2f2;
-            /* background-color: #f5f5f5; */
+            
         }
 
         input[type="text"] {
             width: 100%;
             padding: 8px;
             box-sizing: border-box;
-            /* background-color: #f5f5f5; */
+          
         }
 
         .row {
             margin: 20px 0;
-            /* background-color: #f5f5f5; */
+           
         }
 
         .btn {
@@ -73,6 +73,7 @@ if(is_array($suadh)){
     </style>
 </head>
 <body>
+    <!-- form update -->
     <h3>Cập nhật tài khoản</h3>
     <form action="index.php?act=update" method="post">
         <table>
