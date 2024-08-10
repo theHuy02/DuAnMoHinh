@@ -36,18 +36,14 @@
 </style>
 <div class="chung">
     <h1>Quản Lý ĐƠn Hàng</h1>
-    <!-- donhang -->
+    
     <table>
         <tr>
             <th>STT</th>
-            <!-- hoten -->
             <th>Họ tên</th>
             <th>SĐT</th>
-            <!-- sdt -->
             <th>Địa Chỉ</th>
-            <!-- diachi -->
             <th>Tổng tiền</th>
-        <!-- tongtien -->
             <th>Phương Thức Thanh Toán</th>
             <th>Trạng thái đơn hàng</th>
             <th>Trạng Thái Thanh Toán</th>
