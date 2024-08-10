@@ -91,6 +91,7 @@ if(is_array($taikhoan)){
             </tr>
             <tr>
                 <th>Phone</th>
+                <!-- phone -->
                 <td><input type="text" name="phone" value="<?php echo $tel ?>"></td>
             </tr>
             <tr>
