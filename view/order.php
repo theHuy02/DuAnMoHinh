@@ -91,7 +91,6 @@
                     <th>Thành tiền</th>
                 </tr>
                 <?php 
-                    // print_r($cart);
                     
                     foreach ($cart as $item) {
                         $sum_total =  $_SESSION['resultTotal'];
