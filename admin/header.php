@@ -152,6 +152,7 @@
 											<i class="fa-solid fa-comment"></i>
 												<a class="h-full w-full flex items-center" href="index.php?act=binhluan">
 													<span>Danh Sách Bình Luận</span>
+													<!-- qlbl -->
 												</a>
 											</li>
 										</ul>
