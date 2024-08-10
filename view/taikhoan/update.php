@@ -55,8 +55,7 @@
                                 <li> <input class="btn btn-primary"
                                         style="background-color:#3474d4;color:#FFFFFF;width: 200px;" type="submit"
                                         value="Update Profile" name="capnhat"></li>
-                                <!-- <a href="#!" class="btn btn-secondary">Register</a> -->
-                                <!-- <input class="btn btn-primary" style="background-color:#3474d4;color:#FFFFFF" type="submit" value="Edit Password" name=""> -->
+                               
                             </span>
 
 
