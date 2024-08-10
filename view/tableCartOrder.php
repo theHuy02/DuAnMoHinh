@@ -24,7 +24,7 @@ if (!empty($_SESSION['cart'])) {
     foreach ($dataDb as $key => $product) :
         // kiểm tra số lượng sản phẩm trong giỏ hàng
         $quantityInCart = 0;
-        foreach ($_SESSION['cart'] as $item) {
+        foreach ($_SESSION['cart'] as $item) { // Tìm số lượng của sản phẩm đó trong giỏ hàng
             if ($item['id'] == $product['id']) {
                 $quantityInCart = $item['quantity'];
                 break;
@@ -39,13 +39,14 @@ if (!empty($_SESSION['cart'])) {
             <td><?= $product['name'] ?></td>
               <td>  <?= number_format((int)$product['price'], 0, ",", ".")  ?> VNĐ</td>
             <td>
-                <input type="number" value="<?= $quantityInCart ?>" min="1" id="quantity_<?= $product['id'] ?>" oninput="updateQuantity(<?= $product['id'] ?>, <?= $key ?>)">
+                <input type="number" value="<?= $quantityInCart ?>" min="1" id="quantity_<?= $product['id'] ?>" 
+                oninput="updateQuantity(<?= $product['id'] ?>, <?= $key ?>, <?= $product['soluong'] ?>)">
             </td>
             <td>
                 <?= number_format((int)$product['price'] * (int)$quantityInCart, 0, ",", ".") ?> VNĐ
             </td>
             <td>
-                <button>Xóa</button>
+                <button onclick="removeFromCart(<?= $product['id'] ?>)">Xóa</button>
             </td>
         </tr>
     <?php
@@ -74,3 +75,24 @@ if (!empty($_SESSION['cart'])) {
 <?php
 }
 ?>
+<script>
+    function removeFromCart(id) {
+    if (confirm("Bạn có đồng ý xóa sản phẩm hay không?")) {
+        $.ajax({
+            type: 'POST',
+            url: './view/removeFormCart.php',
+            data: {
+                id: id
+            },
+            success: function(response) {
+                $.post('view/tableCartOrder.php', function(data) {
+                    $('#order').html(data);
+                });
+            },
+            error: function(error) {
+                console.log(error);
+            },
+        });
+    }
+}
+</script>

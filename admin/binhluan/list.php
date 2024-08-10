@@ -31,6 +31,7 @@
 														<tr>
 														<th>ID</th>
 															<th>ID Người Dùng</th>
+															<!-- <th>DDaij chir nguoiwf dungf</th> -->
 															<th>Tên Người Dùng</th>
 															<th>ID Sản Phẩm</th>
 															<th>Tên Sản PHẩm</th>

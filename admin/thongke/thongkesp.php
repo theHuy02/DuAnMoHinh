@@ -5,6 +5,7 @@
   <script type="text/javascript">
     google.charts.load("current", {packages:["corechart"]});
     google.charts.setOnLoadCallback(drawChart);
+
     function drawChart() {
       const data = google.visualization.arrayToDataTable([
         ['Danh mục', 'Số lượng'],

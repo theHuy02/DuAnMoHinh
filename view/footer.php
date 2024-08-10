@@ -25,7 +25,7 @@
                                         <li class="ec-footer-link"><span>Call Us:</span><a href="0110001111">+84
                                                 0123 456 789</a></li>
                                         <li class="ec-footer-link"><span>Email:</span><a
-                                                href="mailto:example@ec-email.com">huylt@gmail.com</a></li>
+                                                href="mailto:example@ec-email.com">mohinhgundam@fpt.edu.vn</a></li>
                                     </ul>
                                 </div>
                             </div>

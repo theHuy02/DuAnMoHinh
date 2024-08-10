@@ -157,10 +157,16 @@ $hinh1 = $img_path . $img1;
                     <div class="box_search">
                         <form action="index.php?act=chitiet&idsp=<?=$id?>" method="POST">
                             <input type="hidden" name="idpro" value="<?=$id?>">
+<<<<<<< HEAD
                             <input type="text" name="noidung" placeholder="nhập bình luận của bạn">
 
                             <button class="gui" type="submit" name="guibinhluan"
                                 style="background:#AAAAAA">Gửi</button>
+=======
+                            <input type="text" name="noidung" placeholder="nhập bình luận của bạn">                           
+                                <button class="gui" type="submit" name="guibinhluan"
+                                    style="background:#AAAAAA">Gửi</button>
+>>>>>>> fe0879a2cb2f51d4a08c2504b0a125559a2de31b
                         </form>
                     </div>
 
