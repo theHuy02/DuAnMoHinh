@@ -65,6 +65,7 @@ if(is_array($taikhoan)){
     </style>
 </head>
 <body>
+    <!-- edit tai khoan -->
     <h3>Cập nhật tài khoản</h3>
     <form action="index.php?act=update" method="post">
         <table>
