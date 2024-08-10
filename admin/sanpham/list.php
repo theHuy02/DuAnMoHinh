@@ -33,6 +33,7 @@
 															<th>Name Product</th>
 															<!-- name product -->
 															<th>Image</th>
+															<!-- image -->
 															<th>price</th>
 															<th>Số Lượng</th>
 														</tr>
