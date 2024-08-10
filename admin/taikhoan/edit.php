@@ -76,6 +76,7 @@ if(is_array($taikhoan)){
             </tr>
             <tr>
                 <th>Pass</th>
+                <!-- pass -->
                 <td><input type="text" name="pass" value="<?php echo $password ?>"></td>
             </tr>
             <tr>
