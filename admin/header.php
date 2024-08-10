@@ -145,6 +145,7 @@
 												</path>
 											</svg>
 											<span class="menu-item-text">Quản Lý Bình Luận</span>
+											<!-- dsbl -->
 										</div>
 										<ul>
 											<li data-menu-item="modern-dialog" class="menu-item">
