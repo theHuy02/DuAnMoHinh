@@ -1,4 +1,5 @@
 <?php
+// thanh toán momo
 header('Content-type: text/html; charset=utf-8');
 
 

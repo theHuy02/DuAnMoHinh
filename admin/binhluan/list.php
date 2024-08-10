@@ -26,12 +26,11 @@
 											</div>
 											<div class="overflow-x-auto">
 											<table id="product-list-data-table" class="table-default table-hover data-table">
-  <!-- nội dung bảng -->
+  													<!-- nội dung bảng -->
 													<thead>
 														<tr>
 														<th>ID</th>
 															<th>ID Người Dùng</th>
-															<!-- <th>DDaij chir nguoiwf dungf</th> -->
 															<th>Tên Người Dùng</th>
 															<th>ID Sản Phẩm</th>
 															<th>Tên Sản PHẩm</th>
