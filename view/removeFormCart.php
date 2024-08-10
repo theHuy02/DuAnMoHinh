@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+ // Kiểm giỏ hàng có tồn tại hay không
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Lấy dữ liệu từ ajax đẩy lên
     $productId = $_POST['id'];
