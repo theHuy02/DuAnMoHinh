@@ -81,6 +81,7 @@ if(is_array($taikhoan)){
             </tr>
             <tr>
                 <th>Full Name</th>
+                <!-- fullname -->
                 <td><input type="text" name="fullname" value="<?php echo $fullname ?>"></td>
             </tr>
             <tr>
