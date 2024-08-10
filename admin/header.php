@@ -122,6 +122,7 @@
 												<a class="h-full w-full flex items-center"
 													href="index.php?act=adddm">
 													<span>Thêm Danh Mục</span>
+													<!-- danhmuc -->
 													<!-- <span>Thêm Danh Mục</span> -->
 												</a>
 											</li>
