@@ -51,12 +51,12 @@ input {
 
 
                 <?php
-            extract($onesp);
-            ?>
+extract($onesp);
+?>
                 <?php
 
-                $hinh = $img_path . $img;
-                $hinh1 = $img_path . $img1;
+$hinh = $img_path . $img;
+$hinh1 = $img_path . $img1;
 
 ?>
                 <!-- Single product content Start -->
@@ -67,21 +67,21 @@ input {
                                 <div class="single-product-scroll">
                                     <div class="single-product-cover">
                                         <div class="">
-                                            <img class="img-responsive" src="<?=$hinh ?>" alt="" width="467px"
+                                            <img class="img-responsive" src="<?=$hinh?>" alt="" width="467px"
                                                 height="400px">
                                         </div>
                                         <div class="">
-                                            <img class="img-responsive" src="<?=$hinh1 ?>" alt="" width="467px"
+                                            <img class="img-responsive" src="<?=$hinh1?>" alt="" width="467px"
                                                 height="400px">
                                         </div>
                                     </div>
                                     <div class="single-nav-thumb">
                                         <div class="single-slide">
-                                            <img class="img-responsive" src="<?=$hinh ?>" alt="" width="100px"
+                                            <img class="img-responsive" src="<?=$hinh?>" alt="" width="100px"
                                                 height="70px">
                                         </div>
                                         <div class="single-slide">
-                                            <img class="img-responsive" src="<?=$hinh1 ?>" alt="" width="100px"
+                                            <img class="img-responsive" src="<?=$hinh1?>" alt="" width="100px"
                                                 height="70px">
                                         </div>
                                     </div>
@@ -89,15 +89,15 @@ input {
                             </div>
                             <div class="single-pro-desc">
                                 <div class="single-pro-content">
-                                    <h5 class="ec-single-title"><?=$name ?></h5>
+                                    <h5 class="ec-single-title"><?=$name?></h5>
 
-                                    <div class="ec-single-desc"><?=$mota ?></div>
-                                    <h5 class="single-price">số lượng còn lại: <?=$soluong ?></h5>
+                                    <div class="ec-single-desc"><?=$mota?></div>
+                                    <h5 class="single-price">số lượng còn lại: <?=$soluong?></h5>
                                     <div class="ec-single-price-stoke">
                                         <div class="ec-single-price">
                                             <span class="ec-price">
                                                 <span class="new-price" style="color:red;">
-                                                    <?= number_format((int)$price, 0, ",", ".") ?> VNĐ</span>
+                                                    <?=number_format((int) $price, 0, ",", ".")?> VNĐ</span>
                                             </span>
                                         </div>
 
@@ -111,8 +111,8 @@ input {
                                         <div class="ec-single-cart ">
                                             <button class="add-to-cart"
                                                 style=" background-color: #0099; padding:10px; color:	#ffffff"
-                                                data-id="<?= $id ?>"
-                                                onclick="addToCart(<?= $id ?>,'<?= $name ?>',<?= $price ?>)"> Add To
+                                                data-id="<?=$id?>"
+                                                onclick="addToCart(<?=$id?>,'<?=$name?>',<?=$price?>)"> Add To
                                                 Cart</button>
                                         </div>
                                     </div>
@@ -143,26 +143,24 @@ input {
                     <!-- binhluan -->
                     <div class="box_content2  product_portfolio binhluan ">
                         <table class="bl">
-                            <?php foreach($binhluan as $value): ?>
+                            <?php foreach ($binhluan as $value): ?>
                             <tr>
-                                <td> <?php  echo $value['user']?></td>
+                                <td> <?php echo $value['user'] ?></td>
 
-                                <td style="width: 600px"><?php echo $value['noidung']?></td>
+                                <td style="width: 600px"><?php echo $value['noidung'] ?></td>
 
                                 <td><?php echo date("d/m/Y", strtotime($value['ngaybinhluan'])) ?></td>
                             </tr>
-                            <?php endforeach; ?>
+                            <?php endforeach;?>
                         </table>
                     </div>
                     <div class="box_search">
                         <form action="index.php?act=chitiet&idsp=<?=$id?>" method="POST">
                             <input type="hidden" name="idpro" value="<?=$id?>">
-                            <<<<<<< HEAD <input type="text" name="noidung" placeholder="nhập bình luận của bạn">
-                                =======
-                                <input type="text" name="noidung" placeholder="Nhập bình luận của bạn">
-                                >>>>>>> b3e9966d2cf83942645d5caf424e860ae7891894
-                                <button class="gui" type="submit" name="guibinhluan"
-                                    style="background:#AAAAAA">Gửi</button>
+                            <input type="text" name="noidung" placeholder="nhập bình luận của bạn">
+
+                            <button class="gui" type="submit" name="guibinhluan"
+                                style="background:#AAAAAA">Gửi</button>
                         </form>
                     </div>
 
