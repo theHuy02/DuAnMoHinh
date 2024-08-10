@@ -3,13 +3,14 @@ session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Lấy dữ liệu từ AJAX đẩy lên
+
     $productId = $_POST['id'];
     $newQuantity = $_POST['quantity'];
 
     if (!empty($_SESSION['cart'])) { // Kiểm Kiểm tra xem giỏ hàng có trống hay không
         $index = array_search($productId, array_column($_SESSION['cart'], 'id')); // Tìm sản phẩm trong giỏ hàng
 
-        // Nếu sản phẩm tồn tại thì cập nhật lại số lượng
+        // Nếu sản phẩm tồn tại thì cập nhật lại số lượng san phẩm 
         if ($index !== false) {
             // Giả sử $availableStock là số lượng sản phẩm tồn kho
             // Bạn có thể lấy giá trị này từ cơ sở dữ liệu
