@@ -37,6 +37,7 @@
 															<th>price</th>
 															<!-- price -->
 															<th>Số Lượng</th>
+															<!-- soluong -->
 														</tr>
 													
 													<tbody>
