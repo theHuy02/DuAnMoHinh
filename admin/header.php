@@ -103,6 +103,7 @@
 										<div class="menu-collapse-item">
 											<i class="fa-regular fa-folder fa-lg"></i>
 											<span class="menu-item-text">Quản Lý Danh Mục</span>
+											<!-- quanly -->
 											<!-- <span class="menu-item-text">Quản Lý Danh Mục</span> -->
 										</div>
 										<ul>
